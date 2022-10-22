@@ -1,0 +1,98 @@
+.card {
+    width: 200px;
+    height: 330px;
+    border: 1px solid white;
+}
+
+.card-header {
+    color: white;
+    height: 20%;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 5%;
+}
+
+.card-main {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    height: 40%;
+}
+
+.card-main_currency {
+    align-self: flex-start;
+}
+
+.card-main_price {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.card-main_period {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+div[data-id='1'] .card-header {
+    background-color: #1c9dac;
+}
+
+div[data-id='1'] .card-main {
+    background-color: #28c2d6;
+}
+
+div[data-id='2'] .card-header {
+    background-color: #198a73;
+}
+
+div[data-id='2'] .card-main {
+    background-color: #1faf8e;
+}
+
+div[data-id='3'] .card-header {
+    background-color: #c5544d;
+}
+
+div[data-id='3'] .card-main {
+    background-color: #f46a5f;
+}
+
+div[data-id='4'] .card-header {
+    background-color: #232b34;
+}
+
+div[data-id='4'] .card-main {
+    background-color: #303742;
+}
+
+.card-footer_speed {
+    background-color: #f8f8f8;
+    color: #787977;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    height: 20%;
+}
+
+.card-footer_text {
+    background-color: #eeeeee;
+    color: #787977;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    height: 20%;
+}
+
+.card-max {
+    width: 260px;
+    height: 370px;
+    box-shadow: 0px 10px 5px 1px rgba(148, 151, 154, 0.35);
+    z-index: 1;
+}
