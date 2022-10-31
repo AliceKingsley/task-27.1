@@ -2,13 +2,24 @@ import React from "react";
 import "./Card.css";
 
 export default class Card extends React.Component {
+
+    
+
     render() {
-        const {id, name, price, speed, text} = this.props;
-        const nameClass = (price === 550) ? "card-max" : "card";
+        const {id, name, price, speed, text, isSelected, onCardClick} = this.props;
+        let nameClass = isSelected ? "card-max" : "card";
+
+        if (isSelected) {
+            nameClass += " card-max";
+        }
+
+        function onClick() {
+            onCardClick(id);
+        }
 
         return (
             <React.Fragment>
-                <div className={nameClass} data-id={id}>
+                <div className={nameClass} data-id={id} onClick={onClick}>
                     <div className="card-header">
                         <p>{name}</p>
                     </div>
@@ -20,6 +31,9 @@ export default class Card extends React.Component {
                     <div className="card-footer">
                         <p className="card-footer_speed">{`до ${speed} Мбит/сек`}</p>
                         <p className="card-footer_text">{text}</p>
+                    </div>
+                    <div className="card-button">
+                        <button className="button">{isSelected ? "Выбрано" : "Выбрать"}</button>
                     </div>
                 </div>
             </React.Fragment>

@@ -70,7 +70,7 @@ div[data-id='4'] .card-main {
     background-color: #303742;
 }
 
-.card-footer_speed {
+.card-footer_speed, .card-button {
     background-color: #f8f8f8;
     color: #787977;
     display: flex;
@@ -95,4 +95,17 @@ div[data-id='4'] .card-main {
     height: 370px;
     box-shadow: 0px 10px 5px 1px rgba(148, 151, 154, 0.35);
     z-index: 1;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: darkgrey;
+    color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #303742;
 }
